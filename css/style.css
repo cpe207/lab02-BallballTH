@@ -1,6 +1,164 @@
 .center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
+  text-align: center; 
+}
+
+.backgroundWeb{
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.head{
+  text-transform: uppercase;
+  font-size: 3em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0.5em;
+}
+
+.smallhead{
+  color: cadetblue;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 1em;
+}
+
+.btn{
+  display: inline-block;
+  border: 0.1em solid;
+  /* border-color: blanchedalmond; */
+  border-radius: 0.3em;
+  padding: 0.5em;
+  width: 5em;
+  font-size: 1.3em;
+  text-align: center;
+  text-decoration: none; 
+  margin: 0.5em auto; 
+  transition: all 0.3s ease; 
+}
+
+.btn#home{
+  color: rgb(255, 255, 255);
+}
+
+.btn#experience{
+  color: rgb(255, 255, 255);
+}
+
+.btn#contact{
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover#home {
+  transform: translateY(-10px);
+  background-color:  rgb(252, 255, 63) ;
+  color: rgb(0, 0, 0); 
+}
+.btn:hover#experience {
+  transform: translateY(-10px);
+  background-color:  rgb(3, 238, 73) ;
+  color: rgb(0, 0, 0); 
+}
+.btn:hover#contact {
+  transform: translateY(-10px);
+  background-color:  rgb(0, 36, 241) ;
+  color: rgb(0, 0, 0); 
+}
+
+
+.link{
+  color:blueviolet;
+  text-decoration: none; 
+}
+
+.link#contact{
+  margin: 1em;
+}
+
+.contact{
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aliceblue;
+}
+
+.images{
+  height: 15em;
+}
+
+.images#pfp{
+  display: block;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icons{
+  height: 5em;
+  margin: 1em;
+}
+
+.images#exp{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.texth{
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  margin-left: 10em;
+  margin-right: 10em;
+  color:bisque;
+}
+
+.textp{
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  margin-left: 13em;
+  margin-right: 13em;
+}
+
+.gap{
+  margin-top: 5em 0;
+  margin-bottom: 5em;
+}
+
+.smallgap{
+  margin-top: 2.5em 0;
+  margin-bottom: 2.5em;
+}
+
+.end{
+  margin: 10em;
+}
+
+.transitionInFirst{
+  animation: transitionIn 0.5s;
+}
+
+.transitionInSecond{
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+  from {
+    opacity: 0;
+    transform: translateX(-1em);
   }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
